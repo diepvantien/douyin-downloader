@@ -1,0 +1,81 @@
+
+/* content/content.css */
+.dydl-thumb-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 2147483647;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff4f8b 0%, #ff7aa9 100%);
+  color: #fff;
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(255,79,139,0.35), 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform .1s ease, opacity .2s ease, box-shadow .2s ease, background-color .15s ease;
+  opacity: .95;
+}
+.dydl-thumb-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(255,79,139,0.45), 0 4px 12px rgba(0,0,0,0.25);
+  opacity: 1;
+}
+.dydl-thumb-btn:active { transform: translateY(0); opacity: 1; }
+
+.dydl-status {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  z-index: 2147483647;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.35);
+  min-width: 260px;
+}
+.dydl-status-row { display: grid; gap: 6px; }
+.dydl-status .meta { opacity: .85; font-size: 12px; }
+.dydl-status .bar { height: 6px; background: rgba(255,255,255,.2); border-radius: 4px; overflow: hidden; margin-top: 4px; }
+.dydl-status .bar .fill { height: 100%; width: 0%; background: rgba(255,64,129,.9); }
+.dydl-toast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  z-index: 2147483647;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.35);
+}
+
+/* floating button for currently playing video */
+.dydl-floating-btn {
+  position: fixed;
+  right: 52px;
+  top: 64px;
+  z-index: 2147483647;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff4f8b 0%, #ff7aa9 100%);
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(255,79,139,0.45), 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform .1s ease, opacity .2s ease, box-shadow .2s ease;
+  opacity: .5;
+}
+.dydl-floating-btn:hover { transform: translateY(-1px); opacity: 1; }
+
+/* Bigger button when playing/detail/user page */
+.dydl-thumb-btn.dydl-big {
+  padding: 10px 14px;
+  font-size: 14px;
+}

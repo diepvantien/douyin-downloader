@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Douyin Downloader - Settings</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <header>
+    <h1 id="hdr"></h1>
+  </header>
+
+  <main>
+    <label>
+      <span id="lbl-tpl"></span>
+      <input id="tpl" type="text" placeholder="{user}-{count}" />
+    </label>
+    <small id="lbl-hints"></small>
+
+    <label>
+      <span id="lbl-reqdelay"></span>
+      <input id="reqDelay" type="number" min="0" value="0" />
+    </label>
+
+    <fieldset>
+      <legend id="lg-bulk"></legend>
+      <label> <span id="lbl-bsize"></span> <input id="batchSize" type="number" min="1" value="5" /> </label>
+      <label> <span id="lbl-bdelay"></span> <input id="batchDelay" type="number" min="0" value="30" /> </label>
+      <label> <span id="lbl-order"></span>
+        <select id="bulkOrder">
+          <option value="none">Default</option>
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+        </select>
+      </label>
+      <label> <span id="lbl-title"></span> <input id="bulkTitleIncludes" type="text" placeholder="" /> </label>
+      <label> <span id="lbl-limit"></span> <input id="bulkLimit" type="number" min="0" value="0" /> </label>
+    </fieldset>
+
+    <!-- Language selector removed: fixed English UI -->
+
+    <div class="row">
+      <button id="save" class="save-button-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4zm0 2.414L19.586 8H17V5.414zM7 5h8v6H7V5zm12 14H5V13h14v6z"/></svg>
+        <span>Save</span>
+      </button>
+      <span id="msg"></span>
+    </div>
+  </main>
+
+  <script src="options.js"></script>
+</body>
+</html>

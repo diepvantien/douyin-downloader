@@ -1,0 +1,33 @@
+
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; width: 320px; }
+header { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-bottom: 1px solid #eee; }
+h1 { font-size: 16px; margin: 0; }
+.actions { display: grid; gap: 8px; padding: 12px; }
+.actions button { padding: 8px 10px; border-radius: 10px; border: 1px solid #ddd; background: #fff; cursor: pointer; transition: transform .08s ease, box-shadow .12s ease; font-weight: 600; }
+.actions button:hover { transform: translateY(-1px); box-shadow: 0 3px 10px rgba(0,0,0,.08); }
+.paste { padding: 12px; display: grid; gap: 8px; }
+.paste label { font-weight: 600; }
+textarea { width: calc(100% - 2px); min-height: 70px; border-radius: 8px; border: 1px solid #ddd; padding: 8px; resize: vertical; box-sizing: border-box; }
+.status #statusLabel { font-weight: 600; }
+.note { padding: 2px 12px 4px 12px; color:#777; font-size:11px; }
+.paste button { padding: 10px 12px; border-radius: 10px; border: 1px solid #ddd; background: #fff; cursor: pointer; transition: transform .08s ease, box-shadow .12s ease; }
+.paste button:hover { transform: translateY(-1px); box-shadow: 0 3px 10px rgba(0,0,0,.08); }
+.status { padding: 12px; border-top: 1px solid #eee; display: grid; gap: 8px; }
+.counts { display: flex; gap: 12px; }
+.status .row1 { display:flex; align-items:center; justify-content:space-between; }
+.scan { display:grid; gap:6px; }
+.scan .meta { font-size: 12px; color:#666; }
+.scan .bar { height: 6px; background:#eee; border-radius: 4px; overflow:hidden; }
+.scan .bar .fill { display:block; height:100%; background:#4caf50; width:0%; transition: width .2s ease; }
+.scan .nums { font-size: 12px; color:#666; }
+footer { padding: 10px 12px; border-top: 1px solid #eee; display: flex; justify-content: space-between; align-items:center; font-size: 12px; }
+.donate { display:flex; gap: 10px; align-items:center; }
+.donate-item { display:inline-flex; align-items:center; gap:6px; padding:4px 8px; border:1px solid #eee; border-radius:8px; text-decoration:none; color:inherit; background:#fafafa; }
+.donate-item:hover { background:#f0f0f0; }
+.momo-logo { height: 14px; width: auto; display:inline-block; }
+.coffee-icon svg { height: 14px; width: auto; display:inline-block; }
+.copyright { margin-left:auto; color:#777; }
+.legal { padding: 6px 12px 10px 12px; text-align:center; color:#777; font-size:11px; }
+
+/* hover-light */
+.popup .actions button:hover, .popup button:hover{background: rgba(128,128,128,0.15)!important;}

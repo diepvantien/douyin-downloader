@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "short_name": "DouyinDL",
+  "version": "1.0.0",
+  "description": "__MSG_extDesc__",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "scripting",
+    "storage",
+    "tabs",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "*://*.douyin.com/*",
+    "*://*.douyincdn.com/*",
+    "*://*.iesdouyin.com/*",
+    "*://*.zjcdn.com/*"
+  ],
+  "action": {
+    "default_title": "Douyin Downloader",
+    "default_popup": "popup/popup.html"
+  },
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "homepage_url": "https://github.com/diepvantien",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.douyin.com/*",
+        "https://*.iesdouyin.com/*",
+        "https://douyin.com/*"
+      ],
+      "js": [
+        "content/content.js"
+      ],
+      "css": [
+        "content/content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/*"
+      ],
+      "matches": [
+        "https://*.douyin.com/*",
+        "https://douyin.com/*"
+      ]
+    }
+  ],
+  "minimum_chrome_version": "114",
+  "default_locale": "en"
+}

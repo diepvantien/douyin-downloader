@@ -1,0 +1,64 @@
+{
+  "extName": {
+    "message": "Douyin Downloader"
+  },
+  "extDesc": {
+    "message": "Download Douyin videos, export links, bulk download, and capture livestreams."
+  },
+  "btnDownloadThis": {
+    "message": "Download this video"
+  },
+  "toastPreparing": {
+    "message": "Preparing download..."
+  },
+  "toastStartVideo": {
+    "message": "Starting download."
+  },
+  "toastStartLive": {
+    "message": "Starting livestream download."
+  },
+  "toastNeedDouyinTab": {
+    "message": "Open a Douyin tab first."
+  },
+  "toastNeedUserPage": {
+    "message": "Open a Douyin user page then try again."
+  },
+  "toastNeedLiveTab": {
+    "message": "Open a live.douyin.com tab first."
+  },
+  "toastReloadToCatch": {
+    "message": "Could not capture. Reload and try again."
+  },
+  "popupPlay": {
+    "message": "Download this video/photos"
+  },
+  "popupExport": {
+    "message": "Export links (txt)"
+  },
+  "popupAll": {
+    "message": "Download all (user)"
+  },
+  "popupFromLink": { "message": "Download from link/share" },
+  "popupPastePlaceholder": { "message": "Paste link here" },
+  "popupLive": {
+    "message": "Download livestream"
+  },
+  "noteRefresh": {
+    "message": "If video/photos/livestream don't start, refresh the page (F5) and try again."
+  },
+  "statusIdle": {
+    "message": "Idle"
+  },
+  "statusBusy": {
+    "message": "Downloading..."
+  },
+  "statusLabel": { "message": "Status:" },
+  "settingsLink": { "message": "Settings" },
+  "optionsTitle": { "message": "Settings" },
+  "optionsFolderTemplate": { "message": "Default folder name template (inside Downloads):" },
+  "optionsHints": { "message": "Hints: {user}, {count}" },
+  "optionsConcurrency": { "message": "Concurrent downloads:" },
+  "optionsReqDelay": { "message": "Delay between requests (ms):" },
+  "optionsSave": { "message": "Save" },
+  "optionsSaved": { "message": "Saved!" }
+}
